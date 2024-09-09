@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 10%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30vw;
+  list-style: none;
+}
+
+button {
+  background-color: #FF0000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+.primeiraSessao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.primeiraSessao div {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30vw;
+}
+.primeiraSessao img {
+  width: 20%;
+}/*# sourceMappingURL=style.css.map */

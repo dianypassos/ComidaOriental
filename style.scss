@@ -1,0 +1,62 @@
+$font-titulos: "Koh Santepheap", serif;
+$font-texto: "Poppins", sans-serif;
+$cor-de-fundo-caixas: #F8F5F2;
+
+//@mixin permite que você faça grupos de declarações css
+@mixin flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin estilo-button{
+    background-color: #FF0000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    //1 valor top, bottom,
+    //2 valor para esquerda e direita
+    margin: 0 10%;
+}
+
+header{
+    //para usar o @mixin, vamos chamar o include
+    @include flexbox();
+    height: 10vh;//vh ->height
+
+    ul{
+        @include flexbox();
+        width: 30vw;
+        list-style: none;
+    }
+}
+
+button{
+    @include estilo-button();
+}
+
+.primeiraSessao{
+    @include flexbox();
+
+    div{
+        height: 20vh;
+        @include flexbox();
+        flex-direction: column;
+        align-items: flex-start;
+        width: 30vw;
+    }
+
+    img{
+        width: 20%;
+    }
+}
